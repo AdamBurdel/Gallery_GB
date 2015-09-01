@@ -1,4 +1,3 @@
 <?php
 
-phpinfo();
-
+include 'view/index.php';
