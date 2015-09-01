@@ -4,7 +4,7 @@
 </head>
 <body>
 <?foreach ($photos as $photo) {?>
-    <div style="padding:20px;width:600px;margin:0 auto;overflow: hidden;" class="item">
+    <div style="padding:20px;width:600px;margin-left:50px;overflow: hidden;" class="item">
         <img alt="<?=$photo['title']?>" src="<?=$photo['url']?>">
     </div>
 <?}?>

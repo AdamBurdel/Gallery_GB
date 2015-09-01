@@ -5,4 +5,6 @@ require_once __DIR__ . '/models/photos.php';
 
 $photos = Photos_getAll();
 
-include 'view/index.php';
+?>
+<img style="float: right;z-index: -200;position:absolute;right:0px;" src="img/warerfall.gif">
+<?include 'view/index.php';?>
