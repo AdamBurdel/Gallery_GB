@@ -33,3 +33,9 @@ function DBQuerry($sql)
     }
     return $ret;
 }
+
+function DBDelete($sql)
+{
+    DBconnect();
+    return mysql_query($sql);
+}
