@@ -6,9 +6,16 @@ require_once __DIR__ . '/models/photos.php';
 if (!empty($_GET['catID'])) {
     deletePhoto();
 }
+else {
+}
+
 
 $photos = Photos_getAll();
 
+if ($_GET['addnew']== 'yes') {
+    include 'view/addcat.php';
+}
+else {
+ include 'view/index.php';
+};
 ?>
-<img style="float: right;z-index: -200;position:absolute;right:0px;" src="img/warerfall.gif">
-<?include 'view/index.php';?>

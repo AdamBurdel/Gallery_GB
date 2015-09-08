@@ -13,7 +13,7 @@ function DBconnect()
         $config['db']['root'],
         $config['db']['password']
     );
-    mysql_select_db('photos');
+    mysql_select_db($config['db']['DBName']);
 //    if (!res) {
 //        die('Ошибка соединения: ' . mysql_error());
 //    }
@@ -35,6 +35,12 @@ function DBQuerry($sql)
 }
 
 function DBDelete($sql)
+{
+    DBconnect();
+    return mysql_query($sql);
+}
+
+function DBInsert($sql)
 {
     DBconnect();
     return mysql_query($sql);

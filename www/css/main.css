@@ -1,0 +1,14 @@
+.add_cat {
+    right: 0px;
+    display:block;
+    position:absolute;
+    margin-right:25px;
+    margin-left:25px;
+}
+
+.item {
+    padding:20px;
+    width:600px;
+    margin: 0 auto;
+    overflow: hidden;
+}

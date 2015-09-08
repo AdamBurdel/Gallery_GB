@@ -5,5 +5,6 @@ return array(
         'host' => 'localhost',
         'root' => 'root',
         'password' => '',
+        'DBName' => 'photos',
     )
 );
